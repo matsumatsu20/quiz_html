@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <base href="/Users/matsuMac/Develop/question/quiz_html/">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/custom.css">
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/main.css">
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/dashboard.css">
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/ranking.css">
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/question.css">
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/screen.css">
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/custom.css">
+  <!-- endbuild -->
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="/" class="navbar-brand">QUIZ-Party</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div ng-controller="UserResultCtrl">
+      <ol class="breadcrumb">
+        <li>回答者名:テストユーザ</li>
+      </ol>
+
+      <div ng-show="result">
+        <p class="rank-info">以上でクイズは終了です。<br>ありがとうございました！</p>
+      </div>
+
+
+      <div ng-hide="result">
+        <div class="circle-logo">
+          <div class="circle-info">
+            <h1>１位</h1>
+          </div>
+        </div>
+        <p class="rank-info">おめでとうございます！</p>
+        <p class="rank-info">あなたは１位でした！</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

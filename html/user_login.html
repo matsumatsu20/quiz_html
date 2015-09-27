@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <base href="/Users/matsuMac/Develop/question/quiz_html/">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/main.css">
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/dashboard.css">
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/ranking.css">
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/question.css">
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/screen.css">
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/custom.css">
+  <!-- endbuild -->
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="/" class="navbar-brand">QUIZ-Party</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+
+      <h3 class="text-center question">太郎さんクイズ！</h3>
+      <img src="./sample_title.jpg" alt="" class="img-thumbnail img-responsive title-image">
+    <div class="row">
+      <div class="jumbotron col-sm-12">
+        <form class="form form-inline" name="form" action="./html/user_question.html" novalidate>
+          <div class="form-group">
+            <label for="name">名前</label>
+            <input id="name" name="name" class="form-control" ng-model="user.name" required>
+          </div>
+          <button class="btn btn-primary btn-lg btn-login" type="submit"> クイズに参加！ </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

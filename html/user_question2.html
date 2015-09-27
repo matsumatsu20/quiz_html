@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <base href="/Users/matsuMac/Develop/question/quiz_html/">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/main.css">
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/custom.css">
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/dashboard.css">
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/ranking.css">
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/question.css">
+  <link rel="stylesheet" href="/Users/matsuMac/Develop/question/quiz_html/css/screen.css">
+  <!-- endbuild -->
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="/" class="navbar-brand">QUIZ-Party</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div ng-controller="UserQuestionCtrl">
+
+      <ol class="breadcrumb">
+        <li>回答者名:テストユーザ</li>
+      </ol>
+
+      <!-- $scope.myValue がtrueの場合 (要素は表示されます) -->
+      <div ng-show="errorFlag">
+        <h3 class="question">Question.2</h3>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            太郎さんが学生時代に苦手だったものはなんでしょうか？
+          </div>
+        </div>
+
+<!--         <section>
+          <ul class="list-group quizTable" >
+            <li class="list-group-item" ng-repeat="c in choices">
+              <a href="./html/user_answer2.html">武田先生</a>
+            </li>
+            <li class="list-group-item" ng-repeat="c in choices">
+              <a href="./html/user_answer2.html">ゴキブリ</a>
+            </li>
+            <li class="list-group-item" ng-repeat="c in choices">
+              <a href="./html/user_answer2.html">数学の授業</a>
+            </li>
+            <li class="list-group-item" ng-repeat="c in choices">
+              <a href="./html/user_answer2.html">運動会のリレー</a>
+            </li>
+          </ul>
+        </section> -->
+
+        <a href="./html/user_answer2.html" class="btn btn-answer btn-block"> 武田先生</a>
+        <a href="./html/user_answer2.html" class="btn btn-answer btn-block"> ゴキブリ</a>
+        <a href="./html/user_answer2.html" class="btn btn-answer btn-block"> 数学の授業</a>
+        <a href="./html/user_answer2.html" class="btn btn-answer btn-block"> 運動会のリレー</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
